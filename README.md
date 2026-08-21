@@ -30,3 +30,41 @@ npm install          # uma vez (workspaces + symlinks)
 npm run typecheck    # typecheck de tudo
 npm test             # suíte node:test de tudo
 ```
+
+## Instalação no Pi
+
+O Pi carrega as extensões via `pi install` (caminho local ou git — não há publicação em npm) ou pelo array `extensions` do settings. Em qualquer caso, depois de instalar rode `/reload` (ou reinicie o Pi).
+
+### Todas as extensões (caminho local — este checkout)
+
+O manifest `pi` na raiz lista os entry points de `packages/*/index.ts`; o comando instala o conjunto inteiro:
+
+```bash
+pi install /home/luisb/projects/pi-extensions
+```
+
+### Extensões específicas (caminho local)
+
+Cada pacote declara seu próprio `pi.extensions`; instala individualmente, sem copiar:
+
+```bash
+pi install /home/luisb/projects/pi-extensions/packages/pi-todo
+pi install /home/luisb/projects/pi-extensions/packages/pi-btw
+```
+
+### Via git (todas, ex.: outra máquina)
+
+```bash
+pi install git:github.com/luiseduardobatista/pi-extensions
+```
+
+O Pi clona, instala as dependências (workspaces → symlink do `pi-ui-shared`) e carrega os entry points do manifest raiz. Git instala o repo inteiro; para um pacote específico, use o caminho local.
+
+### Alternativa sem `pi install`
+
+O array `extensions` de `~/.pi/agent/settings.json` aceita os caminhos absolutos dos entry points — a forma sem `pi install`.
+
+### Notas
+
+- `pi install` **adiciona** entradas ao settings. Se os mesmos entry points já são carregados por outro meio (ex.: array `extensions` manual), remova um dos dois antes do `/reload` para não registrar as tools em duplicado.
+- Gerencie com `pi list`, `pi remove` e `pi update --extensions`.
