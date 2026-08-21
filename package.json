@@ -4,6 +4,20 @@
   "private": true,
   "type": "module",
   "description": "Extensões Pi do luiseduardobatista — monorepo de pacotes pequenos, independentes e modulares.",
+  "pi": {
+    "extensions": [
+      "./packages/pi-header/index.ts",
+      "./packages/pi-footer/index.ts",
+      "./packages/pi-tool-renderers/index.ts",
+      "./packages/pi-diff/index.ts",
+      "./packages/pi-todo/index.ts",
+      "./packages/pi-questionnaire/index.ts",
+      "./packages/pi-btw/index.ts",
+      "./packages/pi-lsp/index.ts",
+      "./packages/pi-worktree/index.ts",
+      "./packages/pi-effort/index.ts"
+    ]
+  },
   "workspaces": [
     "packages/*"
   ],
