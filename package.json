@@ -1,0 +1,25 @@
+{
+  "name": "pi-extensions",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Extensões Pi do luiseduardobatista — monorepo de pacotes pequenos, independentes e modulares.",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.base.json",
+    "test": "node --test \"packages/*/*.test.ts\""
+  },
+  "devDependencies": {
+    "@earendil-works/pi-ai": "0.84.2",
+    "@earendil-works/pi-coding-agent": "0.84.2",
+    "@earendil-works/pi-tui": "0.84.2",
+    "@types/node": "^22.19.19",
+    "typebox": "^1.3.6",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

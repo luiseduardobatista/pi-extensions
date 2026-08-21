@@ -1,0 +1,19 @@
+{
+	"name": "pi-btw",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"description": "Pi extension. Comando /btw: pergunta lateral para o mesmo modelo sem poluir a conversa principal.",
+	"keywords": ["pi-package", "pi-extension", "btw", "side-question", "overlay"],
+	"scripts": {
+		"test": "node --test \"*.test.ts\""
+	},
+	"pi": {
+		"extensions": ["./index.ts"]
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-ai": "*",
+		"@earendil-works/pi-coding-agent": "*",
+		"@earendil-works/pi-tui": "*"
+	}
+}

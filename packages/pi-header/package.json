@@ -1,0 +1,23 @@
+{
+  "name": "pi-header",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Pi extension. Widget de header enquadrado com nome/versão do Pi, modelo, thinking e diretório (origem: better-ui).",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "header",
+    "tui"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  }
+}

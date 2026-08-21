@@ -1,0 +1,16 @@
+{
+	"name": "pi-worktree",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"description": "Pi extension. Comando /worktree: cria ou reusa um git worktree e troca a sessão do Pi para ele.",
+	"keywords": ["pi-package", "pi-extension", "worktree", "git"],
+	"pi": {
+		"extensions": ["./index.ts"]
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-ai": "*",
+		"@earendil-works/pi-coding-agent": "*",
+		"@earendil-works/pi-tui": "*"
+	}
+}

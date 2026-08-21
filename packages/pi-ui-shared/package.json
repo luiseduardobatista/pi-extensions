@@ -1,0 +1,24 @@
+{
+  "name": "pi-ui-shared",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Plumbing do monorepo pi-extensions: helpers de formatação e pipeline de diff compartilhados pelos pacotes de UI. Não é uma extensão Pi — só código importável.",
+  "type": "module",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "exports": {
+    ".": {
+      "types": "./index.ts",
+      "default": "./index.ts"
+    }
+  },
+  "scripts": {
+    "test": "node --test \"*.test.ts\""
+  },
+  "dependencies": {
+    "diff": "^8.0.2"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  }
+}

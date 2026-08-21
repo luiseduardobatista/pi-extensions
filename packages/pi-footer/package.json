@@ -1,0 +1,23 @@
+{
+  "name": "pi-footer",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Pi extension. Footer compacto de até duas linhas com provider/model, thinking, cwd/branch, uso, contexto e t/s (origem: better-ui).",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "footer",
+    "tui"
+  ],
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

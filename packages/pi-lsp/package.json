@@ -1,0 +1,21 @@
+{
+	"name": "pi-lsp",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"description": "Extensão Pi. Ferramenta lsp() semântica: inicia language servers sob demanda, com instalação isolada.",
+	"keywords": ["pi-package", "pi-extension", "lsp", "semantic", "language-server"],
+	"scripts": {
+		"test": "node --test \"*.test.ts\""
+	},
+	"pi": {
+		"extensions": ["./index.ts"]
+	},
+	"dependencies": {
+		"vscode-jsonrpc": "^9.0.0"
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-ai": "*",
+		"@earendil-works/pi-coding-agent": "*"
+	}
+}

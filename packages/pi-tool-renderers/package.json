@@ -1,0 +1,16 @@
+{
+	"name": "pi-tool-renderers",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"description": "Pi extension. Re-registro das 7 ferramentas internas (bash/read/grep/find/ls/write/edit) com execução oficial e renderização própria, incluindo diff word-level (origem: better-ui).",
+	"keywords": ["pi-package", "pi-extension", "tools", "renderers", "diff", "tui"],
+	"pi": {
+		"extensions": ["./index.ts"]
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-ai": "*",
+		"@earendil-works/pi-coding-agent": "*",
+		"@earendil-works/pi-tui": "*"
+	}
+}

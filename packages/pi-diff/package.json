@@ -1,0 +1,16 @@
+{
+  "name": "pi-diff",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Pi extension. Renderização das tools write e edit com o pipeline visual de diff (gutter, números, sinais, fundos, syntax highlighting e ênfase word-level).",
+  "keywords": ["pi-package", "pi-extension", "diff", "write", "edit", "renderers", "tui"],
+  "type": "module",
+  "pi": {
+    "extensions": ["./index.ts"]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  }
+}

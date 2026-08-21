@@ -1,0 +1,5 @@
+{
+	"idleTimeoutMs": 600000,
+	"requestTimeoutMs": 60000,
+	"cacheDir": "~/.cache/pi-lsp"
+}

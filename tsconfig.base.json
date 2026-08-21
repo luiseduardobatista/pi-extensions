@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"noEmit": true,
+		"strict": true,
+		"target": "es2023",
+		"module": "preserve",
+		"moduleResolution": "bundler",
+		"allowImportingTsExtensions": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+		"types": ["node"]
+	},
+	"include": ["packages/*/**/*.ts"],
+	"exclude": ["**/node_modules/**", "**/dist/**", "**/.pi/**"]
+}

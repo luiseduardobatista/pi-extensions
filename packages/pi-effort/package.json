@@ -1,0 +1,16 @@
+{
+	"name": "pi-effort",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"description": "Pi extension. Comando /effort: muda o nível de thinking do modelo atual.",
+	"keywords": ["pi-package", "pi-extension", "effort", "thinking"],
+	"pi": {
+		"extensions": ["./index.ts"]
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-ai": "*",
+		"@earendil-works/pi-coding-agent": "*",
+		"@earendil-works/pi-tui": "*"
+	}
+}

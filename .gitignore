@@ -1,0 +1,26 @@
+# Secrets / credentials
+*.key
+*.pem
+.env
+.env.*
+
+# Machine-specific config
+settings.json
+auth.json
+
+# Node
+node_modules
+node_modules/
+
+# Editor / OS noise
+.DS_Store
+.vscode/
+.idea/
+*.log
+*.tsbuildinfo
+
+# Pi runtime state (never commit sessions)
+sessions/
+.pi/
+.rpiv/
+run-history.jsonl
